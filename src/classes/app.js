@@ -7,7 +7,6 @@ export class App {
   constructor() {
     const urlParams = new URLSearchParams(window.location.search);
     this.parentID = urlParams.get('parent');
-    //this.apiURL = 'http://localhost:9000';
     this.apiURL = 'https://kanji-server.onrender.com';
     this.writepad = document.querySelector('#writepad');
     this.canvasCont = writepad.querySelector('.canvas-cont');

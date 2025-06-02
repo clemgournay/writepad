@@ -8,7 +8,6 @@ export class SocketManager {
 
   init() {
     this.socket.on('new character', () => {
-      console.log('RECEIVE CLEAR');
       this.app.clear();
       this.app.unlock();
     });
